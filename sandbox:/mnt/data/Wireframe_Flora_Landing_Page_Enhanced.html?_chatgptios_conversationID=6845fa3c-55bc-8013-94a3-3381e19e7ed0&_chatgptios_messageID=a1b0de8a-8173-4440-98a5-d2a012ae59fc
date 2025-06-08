@@ -1,0 +1,86 @@
+# Enhanced version of the microsite HTML with download buttons and a contact form
+
+enhanced_html = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wireframe Flora – 3D Botanical Collection</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f8f8f8; color: #333; margin: 0; padding: 0; }
+        .container { max-width: 960px; margin: 40px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #444; }
+        img { max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px; }
+        .product { margin-bottom: 40px; }
+        .btn { display: inline-block; padding: 10px 20px; background: #444; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px; }
+        .btn:hover { background: #222; }
+        form { margin-top: 40px; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc; }
+        input[type="submit"] { background: #444; color: white; border: none; margin-top: 15px; cursor: pointer; }
+        input[type="submit"]:hover { background: #222; }
+        ul { line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wireframe Flora – Stylized 3D Botanical Collection</h1>
+        <img src="A_3D-rendered_digital_image_displays_three_wirefra.png" alt="Wireframe Flora Banner">
+        <p>Welcome to <strong>Wireframe Flora</strong>, a digital art series by Carlos Alonso blending the elegance of nature with the structure of mathematics.</p>
+        <p>This collection explores floral beauty through a minimalist wireframe lens, perfect for digital environments, installations, and immersive virtual experiences.</p>
+
+        <div class="product">
+            <h2>🌹 Wireframe Rose</h2>
+            <p>A spiral of precision and passion. Great for stylized concept art or 3D sculpture.</p>
+            <a href="#" class="btn">View Listing</a>
+        </div>
+
+        <div class="product">
+            <h2>🌷 Wireframe Tulip</h2>
+            <p>Simplicity meets symmetry—ideal for futuristic botany and AR assets.</p>
+            <a href="#" class="btn">View Listing</a>
+        </div>
+
+        <div class="product">
+            <h2>🌸 Wireframe Lotus</h2>
+            <p>Inspired by sacred geometry, this lotus brings serenity to digital space.</p>
+            <a href="#" class="btn">View Listing</a>
+        </div>
+
+        <div class="product">
+            <h2>🎁 Bundle: Wireframe Flora Collection</h2>
+            <p>Get all three in a discounted 3D bundle—includes OBJ, GLB, STL and license.</p>
+            <a href="Wireframe_Flora_Bundle.zip" class="btn" download>⬇ Download Bundle</a>
+        </div>
+
+        <h2>Use Cases</h2>
+        <ul>
+            <li>VR/AR experiences</li>
+            <li>Digital installations</li>
+            <li>Conceptual sculpture</li>
+            <li>3D printing and physical prototyping</li>
+            <li>Stylized assets for design and animation</li>
+        </ul>
+
+        <h2>📬 Stay in Touch</h2>
+        <form action="#" method="POST">
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message">Message (optional):</label>
+            <textarea id="message" name="message" rows="4" placeholder="I'd love to hear more about..."></textarea>
+
+            <input type="submit" value="Join Mailing List">
+        </form>
+
+        <p style="margin-top: 30px;"><strong>Thank you for exploring the Wireframe Flora Collection!</strong></p>
+    </div>
+</body>
+</html>
+"""
+
+enhanced_html_path = "/mnt/data/Wireframe_Flora_Landing_Page_Enhanced.html"
+with open(enhanced_html_path, "w") as f:
+    f.write(enhanced_html.strip())
+
+enhanced_html_path
